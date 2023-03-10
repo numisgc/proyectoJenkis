@@ -28,6 +28,42 @@ public class Actividad1Test {
     }
     
     @Test
+    public void testDia_laboral_Martes() {
+        System.out.println("dia_laboral Martes");
+        String dia = "Martes";
+        boolean expResult = true;
+        boolean result = Actividad1.dia_laboral(dia);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testDia_laboral_Miercoles() {
+        System.out.println("dia_laboral Miercoles");
+        String dia = "Miercoles";
+        boolean expResult = true;
+        boolean result = Actividad1.dia_laboral(dia);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testDia_laboral_Jueves() {
+        System.out.println("dia_laboral Jueves");
+        String dia = "Jueves";
+        boolean expResult = true;
+        boolean result = Actividad1.dia_laboral(dia);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
+    public void testDia_laboral_Viernes() {
+        System.out.println("dia_laboral Viernes");
+        String dia = "Viernes";
+        boolean expResult = true;
+        boolean result = Actividad1.dia_laboral(dia);
+        assertEquals(expResult, result);
+    }
+    
+    @Test
     public void testDia_laboral_Sabado() {
         System.out.println("dia_laboral Sabado");
         String dia = "Sabado";
@@ -36,4 +72,12 @@ public class Actividad1Test {
         assertEquals(expResult, result);
     }
     
-}
+    @Test
+    public void testDia_laboral_Domingo() {
+        System.out.println("dia_laboral Domingo");
+        String dia = "Domingo";
+        boolean expResult = false;
+        boolean result = Actividad1.dia_laboral(dia);
+        assertEquals(expResult, result);
+    }
+ }
